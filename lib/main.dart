@@ -1,16 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:quick_grader/routing/router.dart';
+import 'package:quick_grader/app.dart';
+import 'package:quick_grader/config/dependecy_injection.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp.router(routerConfig: router());
-  }
+  DI.configureDependencies();
+  runApp(const App());
 }
