@@ -23,6 +23,7 @@ class App extends StatelessWidget {
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
+          fontFamily: "Roboto",
           useMaterial3: true,
           primaryColor: Color.fromRGBO(55, 152, 55, 1),
           primarySwatch: Colors.green,

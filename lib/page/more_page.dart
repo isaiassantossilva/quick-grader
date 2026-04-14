@@ -23,6 +23,16 @@ class MorePage extends StatelessWidget {
 
             ListTile(
               contentPadding: EdgeInsets.symmetric(horizontal: 12),
+              title: Text("Sobre"),
+              trailing: Icon(Icons.keyboard_arrow_right),
+              onTap: () async {
+                // await DB.instance.delete();
+              },
+            ),
+
+            /*
+            ListTile(
+              contentPadding: EdgeInsets.symmetric(horizontal: 12),
               title: Text("Deletar banco"),
               trailing: Icon(Icons.keyboard_arrow_right),
               onTap: () async {
@@ -42,6 +52,7 @@ class MorePage extends StatelessWidget {
                 ).push(MaterialPageRoute(builder: (_) => CameraProcessing()));
               },
             ),
+            */
           ],
         ),
       ),
