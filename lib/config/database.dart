@@ -6,9 +6,7 @@ import 'package:path/path.dart';
 class DB {
   static const String databaseName = "quick_grader.db";
   static const int databaseVersion = 1;
-
   static final DB instance = DB._();
-
   static Database? _database;
 
   DB._();

@@ -3,9 +3,9 @@ class Student {
   String firstName;
   String lastName;
 
-  String get fullName => "$firstName $lastName";
-
   Student({required this.id, required this.firstName, required this.lastName});
+
+  String get fullName => "$firstName $lastName";
 
   factory Student.fromMap(Map<String, dynamic> map) {
     return Student(

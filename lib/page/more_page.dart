@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:quick_grader/utils/camera_processing.dart';
 
 class MorePage extends StatelessWidget {
   const MorePage({super.key});
@@ -29,30 +28,6 @@ class MorePage extends StatelessWidget {
                 // await DB.instance.delete();
               },
             ),
-
-            /*
-            ListTile(
-              contentPadding: EdgeInsets.symmetric(horizontal: 12),
-              title: Text("Deletar banco"),
-              trailing: Icon(Icons.keyboard_arrow_right),
-              onTap: () async {
-                // await DB.instance.delete();
-              },
-            ),
-
-            Divider(height: 1, color: Colors.grey.shade300),
-
-            ListTile(
-              contentPadding: EdgeInsets.symmetric(horizontal: 12),
-              title: Text("Camera"),
-              trailing: Icon(Icons.keyboard_arrow_right),
-              onTap: () async {
-                Navigator.of(
-                  context,
-                ).push(MaterialPageRoute(builder: (_) => CameraProcessing()));
-              },
-            ),
-            */
           ],
         ),
       ),
