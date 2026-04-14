@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quick_grader/config/app_config.dart';
 import 'package:quick_grader/config/app_routes.dart';
 import 'package:quick_grader/page/answer_sheet_generation_page.dart';
 import 'package:quick_grader/page/edit_answer_key_page.dart';
@@ -20,10 +21,10 @@ class App extends StatelessWidget {
     return SafeArea(
       top: false,
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: AppConfig.title,
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          fontFamily: "Roboto",
+          fontFamily: AppConfig.fontFamily,
           useMaterial3: true,
           primaryColor: Color.fromRGBO(55, 152, 55, 1),
           primarySwatch: Colors.green,
